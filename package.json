@@ -16,7 +16,11 @@
   "license": "MIT",
   "devDependencies": {
     "browserify": "^17.0.0",
-    "google-closure-compiler": "^20230502.0.0"
+    "google-closure-compiler": "^20230502.0.0",
+	"webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "wepack-cli": "^0.0.1-security"
   },
   "dependencies": {
     "@ffmpeg/core": "^0.10.0",
