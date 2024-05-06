@@ -25,6 +25,7 @@
   "dependencies": {
     "@ffmpeg/core": "^0.10.0",
     "@ffmpeg/ffmpeg": "^0.10.1",
-    "ytdl-core": "^4.11.5"
+    "ytdl-core": "^4.11.5",
+	"html-webpack-plugin": "^5.5.3"
   }
 }
