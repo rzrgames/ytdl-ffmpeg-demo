@@ -32,7 +32,7 @@ const ytdlOptions = {
             const originURL = parsed.protocol + "//" + parsed.hostname + parsed.path;
             parsed.host = "test.cors.workers.dev";
             parsed.hostname = "test.cors.workers.dev";
-            parsed.path = "?=" + originURL;
+            parsed.path = "?" + originURL;
             parsed.protocol = "https:";
             return parsed;
         }
