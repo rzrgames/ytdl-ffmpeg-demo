@@ -30,9 +30,9 @@ const ytdlOptions = {
         backoff: {inc: 2000, max: 2000},
         transform: (parsed) => {
             const originURL = parsed.protocol + "//" + parsed.hostname + parsed.path;
-            parsed.host = "vercel-cors-proxy-two.vercel.app/api?url=";
-            parsed.hostname = "vercel-cors-proxy-two.vercel.app/api?url=";
-            parsed.path = "/" + originURL;
+            parsed.host = "vercel-cors-proxy-two.vercel.app";
+            parsed.hostname = "vercel-cors-proxy-two.vercel.app";
+            parsed.path = "/api?url=" + originURL;
             parsed.protocol = "https:";
             return parsed;
         }
