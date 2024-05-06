@@ -21,7 +21,7 @@ const cleanMemory = () => {
 };
 
 const proxy = url => {
-    return "https://cors-anywhere.herokuapp.com/" + url;
+    return "https://vercel-cors-proxy-two.vercel.app/api?url=" + url;
 };
 
 const ytdlOptions = {
@@ -30,8 +30,8 @@ const ytdlOptions = {
         backoff: {inc: 2000, max: 2000},
         transform: (parsed) => {
             const originURL = parsed.protocol + "//" + parsed.hostname + parsed.path;
-            parsed.host = "cors-anywhere.herokuapp.com";
-            parsed.hostname = "cors-anywhere.herokuapp.com";
+            parsed.host = "vercel-cors-proxy-two.vercel.app";
+            parsed.hostname = "vercel-cors-proxy-two.vercel.app";
             parsed.path = "/" + originURL;
             parsed.protocol = "https:";
             return parsed;
